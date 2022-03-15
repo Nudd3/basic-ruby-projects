@@ -1,12 +1,15 @@
 # frozen_string_literal: false
 
-def transform(string, key)
-  string.chars.map do |char|
-    char = char.ord
+# class for Caesar Cipher
+class CaesarCipher
+  def transform(string, key)
+    string.chars.map do |char|
+      char = char.ord
 
-    ascii_start = char < 97 ? 65 : 97
+      ascii_start = char < 97 ? 65 : 97
 
-    char = (((char - ascii_start) + key) % 26) + ascii_start if char.between?(65, 90) || char.between?(97, 122)
-    char.chr
-  end.join
+      char = (((char - ascii_start) + key) % 26) + ascii_start if char.between?(65, 90) || char.between?(97, 122)
+      char.chr
+    end.join
+  end
 end
