@@ -12,7 +12,7 @@ puts cs.transform('Z', 9)
 
 # A B C D E F G H I J K L M N O P Q R S T U V W X Y Z
 
-# NOAK, 5
-# STFP
-# NOAK, -5
-# IJVF
+# I'm a phrase 3
+# L'p d skudvh
+# I'm a phrase -3
+# F'j x meoxpb

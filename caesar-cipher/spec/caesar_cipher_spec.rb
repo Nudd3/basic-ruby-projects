@@ -28,15 +28,19 @@ describe CaesarCipher do
     end
 
     it 'Phrase with small positive shift' do
+      expect(subject.transform("I'm a phrase", 3)).to eql("L'p d skudvh")
     end
 
-    skip 'Phrase with small negative shift' do
+    it 'Phrase with small negative shift' do
+      expect(subject.transform("I'm a phrase", -3)).to eql("F'j x meoxpb")
     end
 
-    skip 'Phrase with large positive shift' do
+    it 'Phrase with large positive shift' do
+      expect(subject.transform('Hello, World!', 75)).to eql('Ebiil, Tloia!')
     end
 
-    skip 'Phrase with large negative shift' do
+    it 'Phrase with large negative shift' do
+      expect(subject.transform('Hello, World!', -55)).to eql('Ebiil, Tloia!')
     end
   end
 end
