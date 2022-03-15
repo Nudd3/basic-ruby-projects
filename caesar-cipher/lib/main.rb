@@ -1,7 +1,18 @@
 # frozen_string_literal: false
 
-puts transform('CAT!', 5)
-puts transform('What a string!', 5)
-puts transform('computer', 7)
-puts transform('z', 8)
-puts transform('Z', 9)
+require_relative 'caesar_cipher'
+
+cs = CaesarCipher.new
+
+puts cs.transform('CAT!', 5)
+puts cs.transform('What a string!', 5)
+puts cs.transform('computer', 7)
+puts cs.transform('z', 8)
+puts cs.transform('Z', 9)
+
+# A B C D E F G H I J K L M N O P Q R S T U V W X Y Z
+
+# NOAK, 5
+# STFP
+# NOAK, -5
+# IJVF
